@@ -8,16 +8,25 @@
 <body>
    <script>
 
-    let maxi = -1
-    for(let i = 0 ; i < 3; i++){
-      let asn = Number(prompt(`enter value for number ${i+1}`))
-      if(asn > maxi){
-        maxi = asn
+    let age = Number(prompt("enter your age"))
+    let gender = prompt("enter your geneder")
+
+    if(gender === "male"){
+      if(age>18){
+        alert("eelgigible")
+      }
+      else{
+        alert("noteligible")
       }
     }
-    
-    alert(`maximum number is ${maxi}`)
-    
+    else{
+      if(age>18){
+        alert("eelgigible")
+      }
+      else{
+        alert("noteligible")
+      }
+    }
    </script>
 </body>
 </html>
